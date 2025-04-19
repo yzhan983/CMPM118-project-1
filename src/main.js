@@ -8,5 +8,11 @@ new Phaser.Game({
   width: 20*16,        // 20×15 tiles, each 16 px
   height: 15*16,
   pixelArt: true,
+// add physics system
+  physics: {
+    default: 'arcade',
+    arcade: { debug: false }
+  },
+
   scene: [Generator],
 });
